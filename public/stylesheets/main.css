@@ -1,12 +1,42 @@
 * {
   font-family: sans-serif;
-}
-
-* {
-  margin: 5px 5px 10px;
   padding: 0;
+  color: #fff;
+  box-sizing: border-box;
 }
 
-input[type='submit'] {
+form * {
+  margin: 5px 5px 10px;
+}
+
+input,
+select,
+option {
   padding: 2px 5px;
+  background: #fff;
+  border: none;
+  border-radius: 3px;
+  color: #123;
+}
+
+input[type='submit']:hover {
+  cursor: pointer;
+}
+
+html {
+  background: #012;
+  margin: 0;
+}
+
+body {
+  padding: 30px;
+  max-width: 600px;
+  background: #123;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .3);
+  margin: 0 auto;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 0;
 }
