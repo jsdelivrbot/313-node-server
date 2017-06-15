@@ -1,4 +1,4 @@
-function calcRate(type, weight) {
+function calcRate(type, weight, callback) {
   var price = 0;
   if (type == 'Stamped') {
     if (weight <= 1) {
@@ -77,7 +77,7 @@ function calcRate(type, weight) {
       price = 4.29;
     }
   }
-  return price;
+  callback(null, price);
 }
 
 module.exports = {
